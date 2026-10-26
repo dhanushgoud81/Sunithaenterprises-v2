@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Sunitha Enterprises | Architectural uPVC Window Systems</title>
+  <meta name="description" content="Sunitha Enterprises crafts high-performance German uPVC window systems for luxury residential architecture." />
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION
+       ========================================================================= -->
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <div class="brand" onclick="window.scrollTo({top:0, behavior:'smooth'})" style="cursor: pointer;">
+        <span class="brand-title">Sunitha Enterprises</span>
+        <span class="brand-subtitle">Architectural Fenestration</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#collection" class="nav-link">Window Systems</a>
+        <a href="#studio-3d" class="nav-link">360° Studio</a>
+        <a href="#materials" class="nav-link">Materials &amp; Finishes</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#consultation" class="nav-link">Consultation</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" aria-label="Toggle light or dark theme">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="https://wa.me/919848012345?text=Hello%20Sunitha%20Enterprises,%20I%20would%20like%20to%20inquire%20about%20your%20uPVC%20windows." class="btn-accent nav-cta" target="_blank" rel="noopener">
+          <span>Inquire via WhatsApp</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Open Navigation Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand">
+        <span class="brand-title">Sunitha Enterprises</span>
+        <span class="brand-subtitle">Architectural Fenestration</span>
+      </div>
+      <button class="drawer-close" id="drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <div class="drawer-links">
+      <a href="#collection" class="drawer-link">Window Systems</a>
+      <a href="#studio-3d" class="drawer-link">360° Studio</a>
+      <a href="#materials" class="drawer-link">Materials &amp; Finishes</a>
+      <a href="#portfolio" class="drawer-link">Portfolio</a>
+      <a href="#consultation" class="drawer-link">Consultation</a>
+    </div>
+
+    <div class="drawer-footer">
+      <a href="tel:+919848012345" class="btn-minimal" style="width: 100%;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Call +91 98480 12345</span>
+      </a>
+      <a href="https://wa.me/919848012345?text=Hello%20Sunitha%20Enterprises,%20I%20would%20like%20to%20inquire%20about%20your%20uPVC%20windows." class="btn-accent" target="_blank" rel="noopener" style="width: 100%;">
+        <span>WhatsApp Inquiry</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. EDITORIAL HERO
+       ========================================================================= -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-header">
+        <div class="hero-meta">Precision German uPVC Fenestration</div>
+        <h1 class="hero-title">
+          Engineered for silence, thermal perfection, and <em>natural light.</em>
+        </h1>
+        <p class="hero-desc">
+          Sunitha Enterprises custom fabricates high-performance sliding, casement, villa, and architectural curved window systems for luxury residential spaces.
+        </p>
+      </div>
+
+      <!-- Large Architectural Visual -->
+      <div class="hero-visual-frame">
+        <img src="/images/upvc-hero-luxury.png" alt="Architectural uPVC Window Elevation" />
+        <div class="hero-visual-overlay">
+          <div class="hero-visual-caption">Contemporary Villa Fenestration</div>
+          <div class="hero-specs-row">
+            <div class="hero-spec-item">
+              <span class="hero-spec-val">45 dB</span>
+              <span class="hero-spec-label">Acoustic Isolation</span>
+            </div>
+            <div class="hero-spec-item">
+              <span class="hero-spec-val">Uf 1.3</span>
+              <span class="hero-spec-label">Thermal Value</span>
+            </div>
+            <div class="hero-spec-item">
+              <span class="hero-spec-val">100%</span>
+              <span class="hero-spec-label">Lead-Free Core</span>
+            </div>
+            <div class="hero-spec-item">
+              <span class="hero-spec-val">10 Yr</span>
+              <span class="hero-spec-label">Warranty</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Spec Cards (Stacked on Mobile) -->
+      <div class="mobile-hero-specs">
+        <div class="mobile-spec-card">
+          <span class="val">45 dB</span>
+          <span class="lbl">Acoustic Isolation</span>
+        </div>
+        <div class="mobile-spec-card">
+          <span class="val">Uf 1.3</span>
+          <span class="lbl">Thermal Value</span>
+        </div>
+        <div class="mobile-spec-card">
+          <span class="val">100%</span>
+          <span class="lbl">Lead-Free Core</span>
+        </div>
+        <div class="mobile-spec-card">
+          <span class="val">10 Year</span>
+          <span class="lbl">Warranty</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. WINDOW SYSTEMS (EDITORIAL COLLECTION)
+       ========================================================================= -->
+  <section class="section" id="collection">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="section-label">The Collection</div>
+          <h2 class="section-heading">Architectural Window Systems</h2>
+        </div>
+      </div>
+
+      <!-- Tab Switcher (Horizontally Swipeable on Mobile) -->
+      <div class="window-nav-tabs">
+        <button class="tab-link active" data-cat="sliding">Sliding Systems</button>
+        <button class="tab-link" data-cat="casement">Casement Systems</button>
+        <button class="tab-link" data-cat="villa">Villa (Mesh &amp; Grill)</button>
+        <button class="tab-link" data-cat="tilt-turn">Tilt &amp; Turn</button>
+        <button class="tab-link" data-cat="arch">Arch &amp; Curved</button>
+        <button class="tab-link" data-cat="combination">Combination Facades</button>
+      </div>
+
+      <!-- 3-Perspective Image Layout (Render + CAD Profile + Villa Installation) -->
+      <div class="showcase-display" id="showcase-display">
+        <!-- Rendered dynamically via JS -->
+      </div>
+
+      <!-- Window Info Strip -->
+      <div class="window-editorial-strip" id="window-editorial-strip">
+        <!-- Rendered dynamically via JS -->
+      </div>
+
+      <!-- 6-Tile Window Catalogue Overview -->
+      <div class="windows-catalogue-grid">
+        <div class="window-card-minimal" onclick="window.selectWindow('sliding')">
+          <div class="window-card-img-wrap">
+            <img src="/images/product-sliding-windows.png" alt="Sliding Windows" />
+          </div>
+          <div class="window-card-caption">
+            <div>
+              <div class="window-card-title">Sliding Windows</div>
+              <div class="window-card-sub">2, 2.5 &amp; 3 Track Gliders</div>
+            </div>
+            <span style="color: var(--accent-gold); font-size: 18px;">&rarr;</span>
+          </div>
+        </div>
+
+        <div class="window-card-minimal" onclick="window.selectWindow('casement')">
+          <div class="window-card-img-wrap">
+            <img src="/images/product-casement-windows.png" alt="Casement Windows" />
+          </div>
+          <div class="window-card-caption">
+            <div>
+              <div class="window-card-title">Casement Windows</div>
+              <div class="window-card-sub">Outward &amp; Top-Hung Vents</div>
+            </div>
+            <span style="color: var(--accent-gold); font-size: 18px;">&rarr;</span>
+          </div>
+        </div>
+
+        <div class="window-card-minimal" onclick="window.selectWindow('villa')">
+          <div class="window-card-img-wrap">
+            <img src="/images/product-villa-windows.png" alt="Villa Windows" />
+          </div>
+          <div class="window-card-caption">
+            <div>
+              <div class="window-card-title">Villa Windows</div>
+              <div class="window-card-sub">Glass + SS304 Mesh + Steel Grill</div>
+            </div>
+            <span style="color: var(--accent-gold); font-size: 18px;">&rarr;</span>
+          </div>
+        </div>
+
+        <div class="window-card-minimal" onclick="window.selectWindow('tilt-turn')">
+          <div class="window-card-img-wrap">
+            <img src="/images/product-tilt-turn-windows.png" alt="Tilt and Turn Windows" />
+          </div>
+          <div class="window-card-caption">
+            <div>
+              <div class="window-card-title">Tilt &amp; Turn Windows</div>
+              <div class="window-card-sub">Dual-Axis German Mechanism</div>
+            </div>
+            <span style="color: var(--accent-gold); font-size: 18px;">&rarr;</span>
+          </div>
+        </div>
+
+        <div class="window-card-minimal" onclick="window.selectWindow('arch')">
+          <div class="window-card-img-wrap">
+            <img src="/images/product-arch-windows.png" alt="Arch Windows" />
+          </div>
+          <div class="window-card-caption">
+            <div>
+              <div class="window-card-title">Arch &amp; Curved Windows</div>
+              <div class="window-card-sub">Thermal Curved German Profiles</div>
+            </div>
+            <span style="color: var(--accent-gold); font-size: 18px;">&rarr;</span>
+          </div>
+        </div>
+
+        <div class="window-card-minimal" onclick="window.selectWindow('combination')">
+          <div class="window-card-img-wrap">
+            <img src="/images/product-combination-windows.png" alt="Combination Windows" />
+          </div>
+          <div class="window-card-caption">
+            <div>
+              <div class="window-card-title">Combination Windows</div>
+              <div class="window-card-sub">Multi-Pane Modular Assemblies</div>
+            </div>
+            <span style="color: var(--accent-gold); font-size: 18px;">&rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. 360° ARCHITECTURAL STUDIO STAGE (300 FRAMES)
+       ========================================================================= -->
+  <section id="studio-3d" class="studio-stage-section">
+    <div class="studio-viewport">
+      <div class="studio-canvas-wrap">
+        <canvas id="stage-canvas" width="1280" height="720"></canvas>
+
+        <div class="preloader-overlay" id="preloader-overlay">
+          <div class="preloader-label">Initializing 360° Studio Model...</div>
+        </div>
+
+        <!-- Minimal Discreet Hotspots -->
+        <div class="hotspots-layer" id="hotspots-layer">
+          <button class="hotspot-pin" id="pin-lock" style="top: 48%; left: 39%;">
+            <span class="pin-dot"></span>
+            <span class="pin-tag">Multi-Point Locking</span>
+          </button>
+          <button class="hotspot-pin" id="pin-gasket" style="top: 36%; left: 29%;">
+            <span class="pin-dot"></span>
+            <span class="pin-tag">Continuous EPDM Seal</span>
+          </button>
+          <button class="hotspot-pin" id="pin-glass" style="top: 32%; left: 66%;">
+            <span class="pin-dot"></span>
+            <span class="pin-tag">28mm Low-E Glass</span>
+          </button>
+          <button class="hotspot-pin" id="pin-rollers" style="top: 86%; left: 52%;">
+            <span class="pin-dot"></span>
+            <span class="pin-tag">Tandem WhisperGlide Rollers</span>
+          </button>
+        </div>
+
+        <!-- Studio Dock -->
+        <div class="studio-dock">
+          <button class="dock-play-btn" id="dock-btn-play" title="Play or Pause Rotation">
+            <svg class="icon-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <svg class="icon-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display: none;"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+          </button>
+
+          <div class="dock-slider-wrap">
+            <div class="dock-slider-track">
+              <div class="dock-slider-fill" id="dock-slider-fill"></div>
+            </div>
+            <input type="range" class="dock-slider-input" id="frame-scrubber" min="1" max="300" value="1" step="1" />
+          </div>
+
+          <div class="dock-frame-readout" id="dock-frame-readout">001 / 300</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quiet Scrolly Narrative Cards -->
+    <div class="scrolly-narrative">
+      <div class="story-step active" data-step="1">
+        <div class="step-card">
+          <div class="step-num">01 // Visual Purity</div>
+          <div class="step-title">Monolithic Design</div>
+          <div class="step-desc">Minimalist sightlines maximize unobstructed daylight and seamless exterior perspectives.</div>
+        </div>
+      </div>
+      <div class="story-step" data-step="2">
+        <div class="step-card">
+          <div class="step-num">02 // Security</div>
+          <div class="step-title">Multi-Point Stays</div>
+          <div class="step-desc">Titanium cams drive perimeter keeps continuously around the entire sash to prevent forced entry.</div>
+        </div>
+      </div>
+      <div class="story-step" data-step="3">
+        <div class="step-card">
+          <div class="step-num">03 // Thermal Matrix</div>
+          <div class="step-title">6-Chamber Core</div>
+          <div class="step-desc">Trapped insulating air cells eliminate thermal bridging, keeping interiors cool during summer peaks.</div>
+        </div>
+      </div>
+      <div class="story-step" data-step="4">
+        <div class="step-card">
+          <div class="step-num">04 // Silent Glide</div>
+          <div class="step-title">Tandem Bogies</div>
+          <div class="step-desc">Precision stainless steel tandem rollers glide effortlessly under fingertip pressure.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. MATERIALS & FINISHES (ARCHITECTURAL SWATCH BOARD)
+       ========================================================================= -->
+  <section class="section" id="materials">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="section-label">Architectural Finishes</div>
+          <h2 class="section-heading">Materials &amp; Surfaces</h2>
+        </div>
+        <div style="font-size: 13px; color: var(--text-muted);">
+          Select any sample swatch to inspect the simulated window finish
+        </div>
+      </div>
+
+      <div class="materials-grid">
+        <!-- Physical Sample Board Palette -->
+        <div class="swatches-palette" id="materials-palette">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <!-- Simulated Frame Display -->
+        <div class="simulated-frame-stage">
+          <img src="/images/product-sliding-windows.png" alt="Simulated Window Frame" class="simulated-window-img" />
+          <div class="simulated-color-layer" id="simulated-color-layer"></div>
+          <div class="simulated-frame-caption">
+            <div class="simulated-caption-tag" id="simulated-caption-tag">ALUDEC METALLIC</div>
+            <div class="simulated-caption-title" id="simulated-caption-title">Aludec Anthracite Grey</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. PORTFOLIO (EDITORIAL PHOTOGRAPHY)
+       ========================================================================= -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="section-label">Installed Work</div>
+          <h2 class="section-heading">Selected Residences</h2>
+        </div>
+      </div>
+
+      <div class="portfolio-grid" id="portfolio-grid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. CONSULTATION & INQUIRY
+       ========================================================================= -->
+  <section class="consultation-wrap" id="consultation">
+    <div class="container consultation-box">
+      <div class="consultation-text">
+        <h3>Schedule a Site Measurement</h3>
+        <p>Our fenestration specialists will inspect your rough openings and prepare precise CAD layout proposals.</p>
+      </div>
+
+      <div class="consultation-actions">
+        <a href="tel:+919848012345" class="btn-minimal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+91 98480 12345</span>
+        </a>
+        <a href="https://wa.me/919848012345?text=Hello%20Sunitha%20Enterprises,%20I%20would%20like%20to%20request%20a%20site%20consultation%20for%20uPVC%20windows." class="btn-accent" target="_blank" rel="noopener">
+          <span>Inquire on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color: var(--text-main); font-weight: 600;">SUNITHA ENTERPRISES</strong> &mdash; Precision German uPVC Fenestration
+      </div>
+      <div>
+        Industrial Estate, Hyderabad, Telangana &bull; +91 98480 12345
+      </div>
+      <div>
+        &copy; 2026 Sunitha Enterprises.
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       9. MOBILE STICKY BOTTOM ACTION BAR (CALL & WHATSAPP)
+       ========================================================================= -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-inner">
+      <a href="tel:+919848012345" class="mobile-bar-btn call">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Call</span>
+      </a>
+      <a href="https://wa.me/919848012345?text=Hello%20Sunitha%20Enterprises,%20I%20would%20like%20to%20inquire%20about%20uPVC%20windows." class="mobile-bar-btn wa" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="modal-backdrop" id="lightbox-modal">
+    <div class="lightbox-dialog">
+      <button class="modal-close-btn" id="btn-close-lightbox" aria-label="Close dialog">&times;</button>
+      <img src="" alt="Enlarged Window Photography" class="lightbox-img" id="lightbox-img" />
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
